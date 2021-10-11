@@ -11,7 +11,7 @@ const vowelCount = (str.match(/[aeiou]/gi) || []).length
 
 // Select all consonants
 // Wow regex is tough
-const consonantCount = (str.match(/[a-z](?![aeiou])/gi) || []).length
+const consonantCount = (str.match(/(?![aeiou])[a-z]/gi) || []).length
 
 
 // Getting all vowels with filter
