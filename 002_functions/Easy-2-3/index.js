@@ -2,8 +2,8 @@
 // Example:
 // Input: noOfWords(We are neoGrammers) ––> Output: 3
 
-function noOfWords(sentence) {
-  const words = sentence.split(" ");
-  return words.length
-}
+const noOfWords = sentence => {
+    const words = sentence.split(' ');
+    return words.length;
+};
 console.log(noOfWords('We are neoGrammers'));

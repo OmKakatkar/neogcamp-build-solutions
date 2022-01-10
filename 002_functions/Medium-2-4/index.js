@@ -2,8 +2,6 @@
 // Example:
 // Input: mergeArray([1,3,5], [2,4,6]) ––> Output: [1,3,5,2,4,6]
 
-function mergeArray(arr1, arr2) {
-	return [...arr1, ...arr2]
-}
+const mergeArray = (arr1, arr2) => [...arr1, ...arr2];
 
-console.log(mergeArray([1,3,5], [2,4,6]))
+console.log(mergeArray([1, 3, 5], [2, 4, 6]));

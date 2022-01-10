@@ -4,10 +4,7 @@
 // Input: findMin(3,5,9,1) ––> Output: 1
 // (Hint: Lookup rest parameters in JavaScript)
 
+const findMin = (...nums) => Math.min(...nums);
 
-function findMin(...nums) {
-	return Math.min(...nums)
-}
-
-console.log(findMin(3,5))
-console.log(findMin(3,5,9,1));
+console.log(findMin(3, 5));
+console.log(findMin(3, 5, 9, 1));

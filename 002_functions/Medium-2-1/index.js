@@ -2,8 +2,6 @@
 // Example:
 // Input: arrayLength([1,5,3,7,8]) ––> Output: 5
 
-function arrayLength(arr) {
-	return arr.length
-}
+const arrayLength = arr => arr.length;
 
-console.log(arrayLength([1,5,3,7,8]))
+console.log(arrayLength([1, 5, 3, 7, 8]));

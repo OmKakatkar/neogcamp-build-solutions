@@ -2,8 +2,6 @@
 // Example:
 // Input: charAt("neoGcamp", 4) ––> Output: c
 
-function charAt(str, idx) {
-	return str[idx]
-}
+const charAt = (str, idx) => str[idx];
 
-console.log(charAt("neoGcamp", 4))
+console.log(charAt('neoGcamp', 4));

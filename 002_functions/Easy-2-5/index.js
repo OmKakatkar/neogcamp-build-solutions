@@ -4,9 +4,7 @@
 // Input: findMax(3,5,9,1) ––> Output: 9
 // (Hint: Lookup rest parameters in JavaScript)
 
-function findMax(...nums) {
-	return Math.max(...nums)
-}
+const findMax = (...nums) => Math.max(...nums);
 
-console.log(findMax(3,5))
-console.log(findMax(3,5,9,1))
+console.log(findMax(3, 5));
+console.log(findMax(3, 5, 9, 1));

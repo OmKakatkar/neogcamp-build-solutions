@@ -2,13 +2,13 @@
 // Example:
 // Input: replace([1,5,3,5,6,8], 5, 10) ––> Output: [1,10,3,10,6,8]
 
-function replace(arr, num1, num2) {
-	const replacedArr = arr.map(item => {
-		if(item === num1) {
-			return num2
-		} else return item
-	})
-	return replacedArr;
-}
+const replace = (arr, num1, num2) => {
+    const replacedArr = arr.map(item => {
+        if (item === num1) {
+            return num2;
+        } else return item;
+    });
+    return replacedArr;
+};
 
-console.log(replace([1,5,3,5,6,8], 5, 10))
+console.log(replace([1, 5, 3, 5, 6, 8], 5, 10));

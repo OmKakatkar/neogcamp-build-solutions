@@ -2,11 +2,13 @@
 // Example:
 // Input: reverseCharactersOfWord('we are neoGrammers') –––> Output: ew era sremmarGoen
 
-function reverseCharactersOfWord(sentence) {
-	const words = sentence.split(' ');
-	return words.map(word => {
-		return word.split('').reverse().join('')
-	}).join(' ')
-}
+const reverseCharactersOfWord = sentence => {
+    const words = sentence.split(' ');
+    return words
+        .map(word => {
+            return word.split('').reverse().join('');
+        })
+        .join(' ');
+};
 
-console.log(reverseCharactersOfWord('we are neoGrammers') )
+console.log(reverseCharactersOfWord('we are neoGrammers'));

@@ -2,38 +2,48 @@
 // Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
 // Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
 
+const encodeString = (str, key) => {
+    /*
+	//	The encodeString function takes a string and a key to shift the characters.
+	//	It returns an encoded string
+	*/
+    const lower = 'abcdefghijklmnopqrstuvwxyz';
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-function encodeString(str, key) {
-	const lower = 'abcdefghijklmnopqrstuvwxyz';
-	const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	
-	return str.split('').map(char => {
-		return cipher(char);
-	}).join('');
+    /*
+	//  The cipher function takes a character. Preferrably a string type. 
+	//  Returns the shifted character. 
+	*/
+    let cipher = char => {
+        let alphabet = '';
+        let pos = 0;
+        let newPos = 0;
 
-	function cipher(char) {
-		let alphabet = '';
-		let pos = 0;
-		let newPos = 0;
+        if ('a' <= char && char <= 'z') {
+            alphabet = lower;
+        } else if ('A' <= char && char <= 'Z') {
+            alphabet = upper;
+        } else {
+            return char;
+        }
 
-		if('a' <= char && char <= 'z') {
-			alphabet = lower
+        pos = alphabet.indexOf(char); //calculate the position of current char in lower/upper
+        newPos = getCipherPosition(pos, key); //calculate the shifted position
+        return alphabet.charAt(newPos);
+    };
 
-		} else if('A' <= char && char <= 'Z') {
-			alphabet = upper
+    /*
+	//  The getCipherPosition function takes position of the character and the shifting key.
+	//  Returns the shifted position.
+	*/
+    let getCipherPosition = (pos, key) => (pos + key) % 26;
 
-		} else {
-			return char;
-		}
+    return str
+        .split('')
+        .map(char => {
+            return cipher(char);
+        })
+        .join('');
+};
 
-		pos = alphabet.indexOf(char);
-		newPos = getCipherPosition(pos, key)
-		return alphabet.charAt(newPos)
-	}
-
-	function getCipherPosition(pos, key) {
-		return (pos + key) % 26;
-	}
-}
-
-console.log(encodeString("neogcamp", 2))
+console.log(encodeString('neogcamp', 2));

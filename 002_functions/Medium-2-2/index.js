@@ -2,8 +2,6 @@
 // Example:
 // Input: indexOf([1,6,3,5,8,9], 3) ––> Output: 2
 
-function indexOf(arr, item) {
-	return arr.indexOf(item) 
-}
+const indexOf = (arr, item) => arr.indexOf(item);
 
-console.log(indexOf([1,6,3,5,8,9], 3))
+console.log(indexOf([1, 6, 3, 5, 8, 9], 3));
