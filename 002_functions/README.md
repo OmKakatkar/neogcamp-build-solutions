@@ -19,14 +19,14 @@
    **Input:** `findMin(3,5)` ––> **Output:** `3`  
    **Input:** `findMin(3,5,9,1)` ––> **Output:** `1`  
    _(Hint: Lookup rest parameters in JavaScript)_  
-   **[Soution 1](Easy-2-4/index.js)**
+   **[Soution 1](Easy-2-4/index.js)**   
    **[Soution 2](Easy-2-4/soln.js)**
 1. Given n numbers, your function should return the maximum of them all. The number of parameters won't be accepted from user.  
    **Example:**  
    **Input:** `findMax(3,5)` ––> **Output:** `5`  
    **Input:** `findMax(3,5,9,1)` ––> **Output:** `9`  
    _(Hint: Lookup rest parameters in JavaScript)_  
-   **[Soution 1](Easy-2-5/index.js)**
+   **[Soution 1](Easy-2-5/index.js)**    
    **[Soution 2](Easy-2-5/soln.js)**
 1. Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all.
    **Example:**  
